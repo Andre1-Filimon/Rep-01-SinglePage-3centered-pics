@@ -1,0 +1,82 @@
+body {
+    font-family: kelson;
+    margin: 0;
+    background-color: rgb(236, 232, 225);
+    background-image: url(../Images/special-abilities-background-sprite.png),url(../Images/special-abilities-background-sprite.png),url(../Images/special-abilities-background-sprite.png),url(../Images/special-abilities-background-sprite.png),url(../Images/special-abilities-background-sprite.png),url(../Images/special-abilities-background-sprite.png);
+    background-repeat: no-repeat;
+    background-position: center right,center left,right bottom,left bottom,left top,right top;
+  }
+
+
+  /* Header/Logo Title */
+  .header {
+    font-family: Valorant;
+    padding: 5px;
+    padding-top: 50px;
+    text-align: center;
+    background-image: url(../Images/header.gif);
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    top:0px;
+    z-index: inherit 10;;
+  }
+
+  /* Page Content */
+  .content {
+    padding: 20px;
+  }
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    text-align: left;
+    padding: 8px;
+  }
+
+  .icons {
+    width: 6%;
+    height: 6%;
+  }
+  .valoranttitle:link, .valoranttitle:visited,  .valoranttitle:hover, .valoranttitle:active
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+  a:link, a:visited, a:active
+{
+    color: rgb(118, 128, 121);
+    text-decoration: underline;
+}
+a:hover{color: rgb(236, 232, 225);
+text-decoration:solid;
+background-color:rgb(255, 70, 85) ;
+text-decoration: underline;
+}
+.center {
+  margin: auto;
+ width:64%;
+ height:64%;
+}
+.copyright{
+  background-color:rgb(15, 25, 35) ;
+}
+.footer{
+margin: 0px;
+}
+P.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+  width: 950px;
+}

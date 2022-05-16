@@ -1,0 +1,182 @@
+/* Variables para reutilizar */
+
+:root {
+    --negro: #000;
+    --blanco: #FFF;
+    --gris: #777;
+    --background-negro: rgb(0, 0, 0);
+    --background-blackShdw: rgba(0, 0, 0, 0.486);
+    --fuente-principal: 'Bowlby One SC', cursive;
+    --fuente-segunda: 'Stalinist One', cursive;
+}
+
+
+/* Box-sizing */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 10px == 1rem */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* Globales */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    /* background-color: var(--background-negro); */
+}
+
+h1 {
+    color: var(--blanco);
+    font-size: 80px;
+    text-shadow: rgb(255, 0, 0)-2px -2px .6rem;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 70px;
+    text-align: center;
+    font-family: var(--fuente-principal);
+    letter-spacing: 5px;
+}
+
+p {
+    /* font-family: var(--fuente-principal); */
+    color: var(--blanco);
+    font-size: 15px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    padding: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+}
+
+span {
+    color: var(--negro);
+    animation: Difuminacion .7s infinite alternate;
+}
+
+
+/* Utilities */
+
+@keyframes Difuminacion {
+    from {
+        text-shadow: var(--blanco) -2px -2px .6rem;
+    }
+    to {
+        text-shadow: rgb(255, 10, 10)-2px -2px .1rem;
+    }
+}
+
+.estilo {
+    text-shadow: 1px 1px rgb(255, 0, 0);
+    color: var(--blanco);
+    font-size: 3rem;
+    font-family: var(--fuente-principal);
+}
+
+
+/* Header */
+
+.header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: var(--background-negro);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgb(255, 0, 43) 100%, rgba(0, 0, 0, 1) 20%);
+    text-align: center;
+    font-family: var(--fuente-principal);
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-radius: 1.5rem;
+}
+
+.div:nth-last-child(1) {
+    background-color: var(--background-negro);
+    border-radius: 1.3rem;
+    margin: .6rem;
+    box-shadow: 2px 2px 2px rgb(255, 0, 0);
+}
+
+
+/* HERO(image) */
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/hero2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.hero__contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    font-size: 28px;
+    font-family: var(--fuente-principal);
+    background-color: rgba(0, 0, 0, 0.486);
+    color: var(--blanco);
+    border-radius: 20px;
+}
+
+
+/* PRODUCTS */
+
+.main {
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid__imagen {
+    padding: 25px;
+}
+
+
+/* #ID .CLASES  */
